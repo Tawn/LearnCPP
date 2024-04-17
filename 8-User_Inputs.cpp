@@ -19,8 +19,24 @@ int main() { // Program start
 
     std::cout // Outputting name and age.
     << "Hello, " << name << '\n'
-    << "Your age is " << age << " years old";
+    << "Your age is " << age << " years old \n";
 
+    /* Note: whitespaces will separate words for multiple inputs */
+    std::cout << "Please input 2 words (separated by whitespaces): ";
+    std::string word1, word2;
+    std::cin >> word1;
+    std::cin >> word2;
+
+    std::cout << "Please insert multiple words (separated by whitespaces): ";
+    std::string wordset;
+    std::getline(std::cin >> std::ws, wordset);
+
+    std::cout 
+    << "word1: " << word1 << '\n'
+    << "word2: " << word2 << '\n'
+    << "wordset: " << wordset << '\n'; 
+    /* Without std::ws in the previous std::getline function call, 
+    this outputs blank because it took in the \n argument from last input and put into wordset */
 
     return 0; // Program exit status: Success
 }
