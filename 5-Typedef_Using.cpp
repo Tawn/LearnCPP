@@ -12,8 +12,13 @@
 int main() { // Start of the program
 
     typedef std::string text_t; // text_t: Alias type for String type. 
-    text_t name = "Tawn"; // Declaring variable 'name' as text_t (String) type and assigning value "Tawn"
-    std::cout << "Name: " << name; // Standard character output to console.
+    text_t name = "Tawn"; // Declaring variable 'name' as text_t (String) type.
+    std::cout << "Name: " << name << '\n'; // Standard character output to console.
+
+    using integer_t = int; // integer_t: Alias type for int type.
+    integer_t age = 10; // Declaring variable 'age' as integer_t (int) type.
+    std::cout << "Age: " << age;
+
 
     return 0; // Program exit status: Sucessful
 }
