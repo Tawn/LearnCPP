@@ -5,7 +5,7 @@
     - Takes 3 operands ("ternary")
     - Shorthand for writing if-else statements
 
-        <condition> ? <value/expression/action if true> : <value/expression/action if false; 
+        <condition> ? <value/expression/action if true> : <value/expression/action if false>; 
 */
 
 int main() { // Start of the program
